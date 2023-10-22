@@ -78,7 +78,7 @@ jobs:
 
       - name: Clone OWRT Code
         run: |
-          git clone $OWRT_URL -b $OWRT_BRANCH openwrt ./owrt
+          git clone $OWRT_URL -b $OWRT_BRANCH ./owrt
          ## git clone --depth=1 --single-branch $OWRT_URL ./owrt
 
       - name: Update Feeds
