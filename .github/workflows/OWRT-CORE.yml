@@ -33,7 +33,7 @@ env:
   OWRT_PW: ${{inputs.OWRT_PW}}
   OWRT_IP: ${{inputs.OWRT_IP}}
   #选择OPENWRT分支
-  OWRT_BRANCH: openwrt-22.05
+  OWRT_BRANCH: openwrt-23.05
 
 jobs:
   owrt_core:
