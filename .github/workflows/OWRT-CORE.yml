@@ -32,6 +32,8 @@ env:
   OWRT_URL: ${{inputs.OWRT_URL}}
   OWRT_PW: ${{inputs.OWRT_PW}}
   OWRT_IP: ${{inputs.OWRT_IP}}
+  #选择OPENWRT分支
+  OWRT_BRANCH: openwrt-22.05
 
 jobs:
   owrt_core:
@@ -76,7 +78,8 @@ jobs:
 
       - name: Clone OWRT Code
         run: |
-          git clone --depth=1 --single-branch $OWRT_URL ./owrt
+          git clone $OWRT_URL -b $OWRT_BRANCH openwrt ./owrt
+         ## git clone --depth=1 --single-branch $OWRT_URL ./owrt
 
       - name: Update Feeds
         run: |
