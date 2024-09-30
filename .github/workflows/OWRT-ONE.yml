@@ -31,13 +31,13 @@ jobs:
     uses: ./.github/workflows/WRT-CORE.yml
     with:
       #编译平台
-      WRT_TARGET: MEDIATEK
+      WRT_TARGET: X86_64
       #默认主题
       WRT_THEME: argon
       #默认主机名
-      WRT_NAME: OWRT
+      WRT_NAME: MrWrt
       #默认WIFI名
-      WRT_WIFI: OWRT
+      WRT_WIFI: MrWrt
       #默认地址
       WRT_IP: 192.168.1.1
       #默认密码，仅作提示，修改无用
